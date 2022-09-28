@@ -7,6 +7,10 @@ export const Container = styled.div<ContainerProps>`
   background: #f0f0f5;
   border-radius: 8px;
 
+  width: 20rem;
+  margin-bottom: 2rem;
+
+
   header {
     background: #ffb84d;
     border-radius: 8px 8px 0px 0px;
@@ -22,6 +26,8 @@ export const Container = styled.div<ContainerProps>`
       `};
 
     img {
+      width:100%;
+      height:100%;
       pointer-events: none;
       user-select: none;
     }

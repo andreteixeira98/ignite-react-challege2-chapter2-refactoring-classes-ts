@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Ao molho",
       "description": "Macarrão ao molho branco, fughi e cheiro verde das montanhas",
-      "price": "19.90",
+      "price": "29.90",
       "available": true,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png"
     },
@@ -23,6 +23,38 @@
       "price": "25.90",
       "available": false,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
+    },
+    {
+      "image": "https://ik.imagekit.io/devandreteixeiravaz/7b8e1b51649b690da575933516bc2856_pyBZtC9T0.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1664391915458",
+      "name": "coffee",
+      "price": "6.75",
+      "description": "coffee",
+      "available": true,
+      "id": 4
+    },
+    {
+      "image": "https://ik.imagekit.io/devandreteixeiravaz/7b8e1b51649b690da575933516bc2856_pyBZtC9T0.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1664391915458",
+      "name": "a",
+      "price": "1",
+      "description": "a",
+      "available": true,
+      "id": 5
+    },
+    {
+      "image": "https://ik.imagekit.io/devandreteixeiravaz/7b8e1b51649b690da575933516bc2856_pyBZtC9T0.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1664391915458",
+      "name": "1",
+      "price": "1",
+      "description": "1",
+      "available": true,
+      "id": 6
+    },
+    {
+      "image": "https://ik.imagekit.io/devandreteixeiravaz/7b8e1b51649b690da575933516bc2856_pyBZtC9T0.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1664391915458",
+      "name": "1",
+      "price": "1",
+      "description": "1",
+      "available": true,
+      "id": 7
     }
   ]
 }

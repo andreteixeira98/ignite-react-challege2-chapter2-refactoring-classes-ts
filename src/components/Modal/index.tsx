@@ -10,19 +10,21 @@ interface ModalProps{
   setIsOpen:()=>void;
 }
 function Modal({children, isOpen, setIsOpen}:ModalProps){
-    const [modalStatus, setModalStatus] = useState(isOpen ?? false);
+    const [modalStatus, setModalStatus] = useState(isOpen);
+    const [prevIsOpen, setPrevIsOpen] = useState(false);
 
   // componentDidUpdate(prevProps) {
     
-  //   if (prevProps.isOpen !== isOpen) {
+    useEffect(()=>{
+      if (prevIsOpen !== isOpen) {
       
-  //     this.setState({ modalStatus: isOpen })
-  //   }
+        setPrevIsOpen(isOpen);
+      }
+    },[isOpen, prevIsOpen]);
   // }
 
   useEffect(()=>{//TODO
     setModalStatus(isOpen);
-    console.log(this.props)
   },[isOpen]);
 
     return (

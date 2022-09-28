@@ -1,4 +1,4 @@
-import React, { createRef, Ref } from 'react';
+import React, { createRef} from 'react';
 import { FiCheckSquare } from 'react-icons/fi';
 
 import { Form } from './styles';
@@ -12,18 +12,15 @@ interface ModalEditFoodProps{
   setIsOpen:()=>void;
   editingFood:IFood;
   handleUpdateFood:(food:IFood)=>void;
-  formRef:Ref<FormHandles>;
+ 
 }
-function ModalEditFood ({ editingFood, isOpen, setIsOpen, handleUpdateFood, formRef}:ModalEditFoodProps) {
-  formRef = createRef();
+function ModalEditFood ({ editingFood, isOpen, setIsOpen, handleUpdateFood}:ModalEditFoodProps) {
+  const formRef = createRef<FormHandles>();
 
   async function handleSubmit(data:IFood){
     handleUpdateFood(data);
     setIsOpen();
   };
-
-
-   
 
     return (
       <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
