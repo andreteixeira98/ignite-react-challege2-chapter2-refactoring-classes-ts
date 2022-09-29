@@ -57,7 +57,7 @@ function Food ({ food, handleDelete, handleEditFood}:IFoodProps) {
               onClick={setEditingFood}
               data-testid={`edit-food-${food.id}`}
             >
-              <FiEdit3 size={20} />
+              <FiEdit3 size={12} />
             </button>
 
             <button
@@ -66,7 +66,7 @@ function Food ({ food, handleDelete, handleEditFood}:IFoodProps) {
               onClick={() => handleDelete(food.id)}
               data-testid={`remove-food-${food.id}`}
             >
-              <FiTrash size={20} />
+              <FiTrash size={12} />
             </button>
           </div>
 

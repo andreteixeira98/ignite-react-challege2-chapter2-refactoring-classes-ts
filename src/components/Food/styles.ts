@@ -5,16 +5,17 @@ interface ContainerProps{
 }
 export const Container = styled.div<ContainerProps>`
   background: #f0f0f5;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 
-  width: 20rem;
+  width: 22rem;
+  
   margin-bottom: 2rem;
 
 
   header {
     background: #ffb84d;
     border-radius: 8px 8px 0px 0px;
-    height: 192px;
+    height: 10rem;
     overflow: hidden;
     transition: 0.3s opacity;
     text-align: center;
@@ -34,16 +35,18 @@ export const Container = styled.div<ContainerProps>`
   }
 
   section.body {
-    padding: 30px;
+    height:12rem;
+    padding: 1.5rem;
 
     h2 {
+      
       color: #3d3d4d;
     }
 
     p {
       color: #3d3d4d;
 
-      margin-top: 16px;
+      margin-top: 0.75rem;
     }
 
     .price {
@@ -63,7 +66,7 @@ export const Container = styled.div<ContainerProps>`
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 30px;
+    padding: 1rem 2rem;
     background: #e4e4eb;
     border-radius: 0px 0px 8px 8px;
 
@@ -72,8 +75,8 @@ export const Container = styled.div<ContainerProps>`
 
       button {
         background: #fff;
-        padding: 10px;
-        border-radius: 8px;
+        padding: 0.75rem;
+        border-radius: 0.5rem;
         display: flex;
         border: none;
         transition: 0.1s;
@@ -83,25 +86,27 @@ export const Container = styled.div<ContainerProps>`
         }
 
         & + button {
-          margin-left: 6px;
+          margin-left: 0.5rem;
         }
       }
     }
 
     div.availability-container {
+      
       display: flex;
       align-items: center;
 
       p {
         color: #3d3d4d;
+        font-size:15px;
       }
 
       .switch {
         position: relative;
         display: inline-block;
-        width: 88px;
-        height: 32px;
-        margin-left: 12px;
+        width: 4rem;
+        height: 2rem;
+        margin-left: 0.5rem;
 
         & input {
           opacity: 0;
@@ -114,12 +119,12 @@ export const Container = styled.div<ContainerProps>`
           cursor: pointer;
           top: 0;
           left: 0;
-          right: 0;
+          right: -1.5rem;
           bottom: 0;
           background-color: #c72828;
           -webkit-transition: 0.4s;
           transition: 0.4s;
-          border-radius: 16px;
+          border-radius: 1rem;
 
           &:before {
             position: absolute;
@@ -144,9 +149,9 @@ export const Container = styled.div<ContainerProps>`
         }
 
         input:checked + .slider:before {
-          -webkit-transform: translateX(32px);
-          -ms-transform: translateX(32px);
-          transform: translateX(32px);
+          -webkit-transform: translateX(2rem);
+          -ms-transform: translateX(2rem);
+          transform: translateX(2rem);  
         }
       }
     }

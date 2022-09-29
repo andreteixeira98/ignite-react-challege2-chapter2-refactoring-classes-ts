@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Form as Unform } from '@unform/web';
 
 export const Form = styled(Unform)`
-  padding: 48px 40px;
+  padding: 4rem 3.75rem;
   display: flex;
   flex-direction: column;
 

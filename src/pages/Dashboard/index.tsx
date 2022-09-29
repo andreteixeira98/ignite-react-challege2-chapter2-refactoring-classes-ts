@@ -5,7 +5,7 @@ import api from '../../services/api';
 import Food, { IFood } from '../../components/Food';
 import ModalAddFood from '../../components/ModalAddFood';
 import ModalEditFood from '../../components/ModalEditFood';
-import { FoodsContainer } from './styles';
+import { DashboardContainer, FoodsContainer } from './styles';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -83,7 +83,7 @@ function Dashboard () {
   }
 
     return (
-      <>
+      <DashboardContainer>
         <Header openModal={toggleModal} />
         <ModalAddFood
           isOpen={modalOpen}
@@ -108,7 +108,7 @@ function Dashboard () {
               />
             ))}
         </FoodsContainer>
-      </>
+      </DashboardContainer>
     );
 };
 
